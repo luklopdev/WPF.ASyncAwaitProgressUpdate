@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF.ASyncAwaitProgressUpdate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.ASyncAwaitProgressUpdate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Padding="30" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Loop Through Numbers" Click="Button_Click"/>
+        <ProgressBar x:Name="progressBar" Grid.Row="1" Width="100" Height="20"/>
+        <TextBlock x:Name="txtCaption" Grid.Row="2" Text="Start" HorizontalAlignment="Center" FontSize="50"/>
+    </Grid>
+</Window>
